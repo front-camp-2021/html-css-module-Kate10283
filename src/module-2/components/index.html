@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo-outer">
+            <div class="logo">
+                <img class="logo__img" src="images/logo.png" alt="logo">
+                <p class="logo__text">Online Store</p>
+            </div>
+        </div>
+
+        <div class="breadcr-outer">
+            <div class="breadcr">
+                <span><i class='fas fa-home breadcr__icon'></i></span>
+                <span><i class="fa fa-angle-double-right"></i></span>
+                <span id="breadcr__shop">eCommerce</span>
+                <span><i class="fa fa-angle-double-right"></i></span>
+                <span>Electronics</span>
+            </div>
+        </div>
+
+        <div class="grid-container-row">
+
+            <div class="filters">
+                <div class="filters__header-outer">
+                    <div class="filters__header">
+                        <div class="filters__header-name">Filters</div>
+                        <button type="button" class="filters__header-show-btn"><i
+                                class="fa fa-angle-double-left"></i></button>
+                    </div>
+                </div>
+
+                <div class="filters__block-outer">
+                    <div class="filters__block">
+                        <div class="filters__block-inner">
+
+                            <div class="filter-outer">
+                                <div class="filter">
+                                    <div class="filter__name">
+                                        <div class="filter__name-inner">
+                                            Multi Range
+                                        </div>
+                                    </div>
+                                    <div class="filter__input-outer">
+                                        <input type="radio" id="mr1" name="Multi Range" value="$10"><label
+                                            for="mr1">$10</label>
+                                        <br>
+                                    </div>
+                                    <div class="filter__input-outer">
+                                        <input type="radio" id="mr2" name="Multi Range" value="$10-$100"> <label
+                                            for="mr2">$10-$100</label><br>
+                                    </div>
+                                    <div class="filter__input-outer">
+                                        <input type="radio" id="mr3" name="Multi Range" value="$100-$500"> <label
+                                            for="mr3">$100-$500</label><br>
+                                    </div>
+                                    <div class="filter__input-outer">
+                                        <input type="radio" id="mr4" name="Multi Range" value="$500"> <label
+                                            for="mr4">$500</label><br>
+                                    </div>
+                                    <div class="filter__input-outer">
+                                        <input type="radio" id="mr5" name="Multi Range" value="all" checked> <label
+                                            for="mr5">All</label><br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__line-outer">
+                                <div class="filter__line">
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <div class="filter-outer">
+                                <div class="filter">
+                                    <div class="filter__name">
+                                        <div class="filter__name-inner">
+                                            Category
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat1" name="Category" value="Cell Phones"><label
+                                            for="cat1">Cell
+                                            Phones</label>
+                                        <span>1920</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat2" name="Category" value="Computers & Tablets">
+                                        <label for="cat2">Computers & Tablets</label>
+                                        <span>1820</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat3" name="Category" value="Cell Phone Accessories"
+                                            checked>
+                                        <label for="cat3">Cell Phone Accessories</label>
+                                        <span>462</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat4" name="Category" value="Appliances"> <label
+                                            for="cat4">Appliances</label>
+                                        <span>6565</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat5" name="Category" value="Audio"> <label
+                                            for="cat5">Audio</label>
+                                        <span>120</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat6" name="Category" value="iPhone Accessories">
+                                        <label for="cat6">iPhone Accessories</label>
+                                        <span>353</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat7" name="Category" value="Cameras & Camcorders">
+                                        <label for="cat7">Cameras & Camcorders</label>
+                                        <span>45</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat8" name="Category" value="iPhone Cases & Clips">
+                                        <label for="cat8">iPhone Cases & Clips</label>
+                                        <span>456</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat9" name="Category" value="TV & Home Theater">
+                                        <label for="cat9">TV & Home Theater</label>
+                                        <span>55</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="cat10" name="Category" value="audio"> <label
+                                            for="cat10">Small
+                                            Kitchen Appliances</label>
+                                        <span>10</span>
+                                        <br>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="filter__line-outer">
+                                <div class="filter__line">
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <div class="filter-outer">
+                                <div class="filter">
+                                    <div class="filter__name">
+                                        <div class="filter__name-inner">
+                                            Brand
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br1" name="Brand" value="Insigni"><label for="br1">
+                                            Insigni</label>
+                                        <span>220</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br2" name="Brand" value="Samsung"><label for="br2">
+                                            Samsung</label>
+                                        <span>120</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br3" name="Brand" value="Apple"><label for="br3">
+                                            Apple</label>
+                                        <span>320</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br4" name="Brand" value="HP"><label for="br4">
+                                            HP</label>
+                                        <span>32</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br5" name="Brand" value="Sony"><label for="br5">
+                                            Sony</label>
+                                        <span>520</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br6" name="Brand" value="Metra"><label for="br6">
+                                            Metra</label>
+                                        <span>55</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br7" name="Brand" value="Dyne"><label for="br7">
+                                            Dyne</label>
+                                        <span>120</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br8" name="Brand" value="LG"><label for="br8">
+                                            LG</label>
+                                        <span>98</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br9" name="Brand" value="Canon"><label for="br9">
+                                            Canon</label>
+                                        <span>99</span>
+                                        <br>
+                                    </div>
+
+                                    <div class="filter__input-outer">
+                                        <input type="checkbox" id="br10" name="Brand" value="Speck"><label for="br10">
+                                            Speck</label>
+                                        <span>575</span>
+                                        <br>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters__btn">
+                    <button type="button">Clear all filters</button>
+                </div>
+
+            </div>
+
+
+
+            <div class="flex-container-column">
+                <div class="quantity-outer">
+                    <div class="quantity-results">
+                        7,618 results found
+                    </div>
+                    <button class="favorite" type="button"><i class="far fa-heart"></i></button>
+                </div>
+
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><i class='fas fa-search'></i></button>
+                    </form>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/apple-watch.png" alt="apple-watch">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $399
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Apple Watch Series 4 GPS
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/jbl-speaker.png" alt="jbl-speaker">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $199
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    JBL Speaker
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/iphone-x.png" alt="iphone-x">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $899
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Apple iPhone X 128GB
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/beats-headphones.png" alt="beats-headphones">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $459
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Beats Headphones
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/macbook-pro.png" alt="macbook-pro">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $2499
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Apple Macbook Pro 512GB SSD
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/ipad-pro.png" alt="ipad-pro">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $899
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Apple iPad Pro 64GB
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/homepod.png" alt="homepod">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $399
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Apple Homepod
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/jlab-audio-wireless.png" alt="jlab-audio-wireless">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $2499
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    JBuds Air Wireless Bluetooth…
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-inner">
+
+                            <div class="card__img">
+                                <img src="images/magic-mouse.png" alt="magic-mouse">
+                            </div>
+
+                            <div class="card__rate__price-outer">
+                                <div class="card__rate">
+                                    <div class="card__rate-inner">
+                                        3.4 <i class='far fa-star'></i>
+                                    </div>
+                                </div>
+
+                                <div class="card__price">
+                                    $99
+                                </div>
+                            </div>
+
+                            <div class="card__header-outer">
+                                <div class="card__header">
+                                    Apple Magic Mouse
+                                </div>
+                            </div>
+
+                            <div class="card__text">
+                                Redesigned from scratch and completely revised.
+                            </div>
+                        </div>
+                        <div class="card__btns">
+                            <button type="button" class="card__wishlist">
+                                <i class="far fa-heart"></i> WISHLIST
+                            </button>
+                            <button type="button" class="card__add">
+                                <i class='fas fa-cart-plus'></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="pagination-outer">
+            <div class="pagination">
+                <button class="pagination__arrow" type="button">
+                    <i class="fa fa-angle-left"></i>
+                </button>
+
+                <div class="pagination__nums">
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">4</button>
+                    <button type="button">5</button>
+                    <button type="button">6</button>
+                    <button type="button">7</button>
+                    <button type="button">8</button>
+                    <button type="button">9</button>
+                    <button type="button">10</button>
+                </div>
+
+                <button class="pagination__arrow" type="button">
+                    <i class="fa fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
