@@ -1,0 +1,27 @@
+@import 'global';
+
+.search {
+  input {
+    @include texts(22px !important, 26px, 300);
+    @include borders();
+    outline: none;
+    height: 62px;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  button {
+    height: 62px;
+    width: 62px;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    transform: translate(0, 0);
+    border: none;
+    border-radius: 8px !important;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import 'global';
+
+.logo-text {
+    @include texts(48px, 27px, 600);
+    color: $color;
+}

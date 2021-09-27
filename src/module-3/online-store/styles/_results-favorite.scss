@@ -1,0 +1,14 @@
+@import 'global';
+
+.res-fav {
+  margin-top: 10px;
+
+  .results {
+    @include texts(18px, 21px);
+  }
+
+  .favorite {
+    background-color: $color;
+    @include borders();
+  }
+}
