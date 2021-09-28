@@ -1,0 +1,18 @@
+@import 'global';
+
+.paginat {
+    color: $color;
+
+    .active {
+        .page-link {
+            background-color: $color;
+        }
+        
+    }
+
+    .page-item {
+        a {
+           color: black;  
+        }
+    }
+}

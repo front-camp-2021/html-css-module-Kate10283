@@ -1,0 +1,10 @@
+@import 'global';
+
+.bread-item {
+  @include texts(14px, 17px);
+
+  a {
+    color: $color;
+    text-decoration: none;
+  }
+}

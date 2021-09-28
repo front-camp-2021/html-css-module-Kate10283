@@ -16,27 +16,26 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="bg-light">
 
     <div class="container">
-        <div class="d-flex  align-items-center mb-5 mt-4">
+        <div class="d-flex  align-items-end mb-5 mt-4">
             <img src="images/logo.png" alt="logo">
-            <span class="logo-text">Online Store</span>
+            <span class="text-primary fs-1">Online Store</span>
         </div>
         <nav class="mb-5" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item bread-item"><a href="#"><i class='fas fa-home'></i></a></li>
-                <li class="breadcrumb-item bread-item"><a href="#">eCommerce</a></li>
-                <li class="breadcrumb-item active bread-item" aria-current="page">Electronics</li>
+                <li class="breadcrumb-item"><a href="#"><i class='fas fa-home'></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">eCommerce</li>
+                <li class="breadcrumb-item"><a href="#">Electronics</a></li>
             </ol>
         </nav>
         <div class="row">
-            <div class="col-lg-3 d-none d-lg-block filters">
+            <div class="col-lg-3 d-none d-lg-block">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="filters__header-name">Filters</div>
+                    <div>Filters</div>
                     <button type="button" class="btn btn-light bg-white rounded-3 shadow"><svg
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-chevron-double-left" viewBox="0 0 16 16">
@@ -46,8 +45,8 @@
                                 d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                         </svg></button>
                 </div>
-                <div class="bg-white rounded-3 shadow pt-3 pb-5 ps-4 pe-5 filter-block">
-                    <div class="mb-3 filter-name">Multi Range</div>
+                <div class="bg-white rounded-3 shadow pt-3 pb-5 ps-4 pe-5">
+                    <div class="fw-bold mb-3">Multi Range</div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="multiRange" id="multiRange1">
                         <label class="form-check-label" for="multiRange1">
@@ -79,7 +78,7 @@
                         </label>
                     </div>
                     <hr class="my-4" />
-                    <div class="mb-3 filter-name">Category</div>
+                    <div class="fw-bold mb-3">Category</div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Cell phones" id="category1">
                         <div class="d-flex justify-content-between">
@@ -163,7 +162,7 @@
                         </div>
                     </div>
                     <hr class="my-4" />
-                    <div class="mb-3 filter-name">Brand</div>
+                    <div class="fw-bold mb-3">Brand</div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Insigni" id="brand1">
                         <div class="d-flex justify-content-between">
@@ -248,18 +247,17 @@
             </div>
 
             <div class="col-lg-9 col-md-12">
-                <div class="d-flex justify-content-between mb-3 res-fav">
-                    <div class="results">
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
                         7,618 results found
                     </div>
-                    <button class="btn btn-primary shadow favorite" type="button"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-heart" viewBox="0 0 16 16">
+                    <button type="button" class="btn btn-primary shadow"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                             <path
                                 d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                         </svg></button>
                 </div>
-                <div class="input-group input-group-lg mb-3 search">
+                <div class="input-group input-group-lg shadow mb-3">
                     <input type="text" class="form-control" placeholder="Search" aria-label="Search"
                         aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary bg-white" type="button" id="button-addon2"><svg
@@ -272,14 +270,14 @@
                 <div class="row card-group">
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4" src="images/apple-watch.png" alt="apple-watch">
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/apple-watch.png" alt="apple-watch">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -287,20 +285,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$399</p>
+                                    <p>$399</p>
                                 </div>
-                                <h5 class="card-title cards__header">Apple Watch Series 4 GPS</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Apple Watch Series 4 GPS</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -312,15 +309,15 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4 h-100 w-50" src="images/jbl-speaker.png"
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/jbl-speaker.png"
                                     alt="jbl-speaker">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -328,20 +325,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$199</p>
+                                    <p>$199</p>
                                 </div>
-                                <h5 class="card-title cards__header">JBL Speaker</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">JBL Speaker</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -353,14 +349,14 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4" src="images/iphone-x.png" alt="iphone-x">
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/iphone-x.png" alt="iphone-x">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -368,20 +364,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$999</p>
+                                    <p>$999</p>
                                 </div>
-                                <h5 class="card-title cards__header">Apple iPhone X 128GB</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Apple iPhone X 128GB</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -393,15 +388,15 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4" src="images/beats-headphones.png"
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/beats-headphones.png"
                                     alt="beats-headphones">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -409,20 +404,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$459</p>
+                                    <p>$459</p>
                                 </div>
-                                <h5 class="card-title cards__header">Beats Headphones</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Beats Headphones</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -434,14 +428,14 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4" src="images/macbook-pro.png" alt="macbook-pro">
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/macbook-pro.png" alt="macbook-pro">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -449,20 +443,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$2499</p>
+                                    <p>$2499</p>
                                 </div>
-                                <h5 class="card-title cards__header">Apple Macbook Pro 512GB SSD</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Apple Macbook Pro 512GB SSD</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -474,14 +467,14 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4" src="images/ipad-pro.png" alt="ipad-pro">
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/ipad-pro.png" alt="ipad-pro">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -489,20 +482,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$899</p>
+                                    <p>$899</p>
                                 </div>
-                                <h5 class="card-title cards__header">Apple iPad Pro 64GB</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Apple iPad Pro 64GB</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -514,14 +506,14 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4 h-100 w-75" src="images/homepod.png" alt="homepod">
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/homepod.png" alt="homepod">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -529,20 +521,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$399</p>
+                                    <p>$399</p>
                                 </div>
-                                <h5 class="card-title cards__header">Apple Homepod</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Apple Homepod</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -554,15 +545,15 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4 h-100 w-75" src="images/jlab-audio-wireless.png"
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/jlab-audio-wireless.png"
                                     alt="jlab-audio-wireless">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -570,20 +561,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$2499</p>
+                                    <p>$2499</p>
                                 </div>
-                                <h5 class="card-title cards__header">JBuds Air Wireless Bluetooth…</h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">JBuds Air Wireless Bluetooth…</h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -595,15 +585,15 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                        <div class="p-3 bg-white shadow rounded-3 card h-100 cards__card">
+                        <div class="p-3 bg-white shadow rounded-3 card h-100">
                             <div class="h-50 d-flex justify-content-center">
-                                <img class="card-img-top px-4 py-4  h-100 w-75" src="images/magic-mouse.png"
+                                <img class="card-img-top px-4 py-4 img-fluid w-auto" src="images/magic-mouse.png"
                                     alt="magic-mouse">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div
-                                        class="d-flex align-items-center shadow rounded-3 text-white px-3 py-1 cards__rate">
+                                        class="d-flex align-items-center bg-primary shadow rounded-3 text-white px-3 py-1">
                                         <div class="pe-2">3.4</div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -611,20 +601,19 @@
                                                 d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                         </svg>
                                     </div>
-                                    <p class="cards__price">$99</p>
+                                    <p>$99</p>
                                 </div>
-                                <h5 class="card-title cards__header">Apple Magic Mouse </h5>
-                                <p class="card-text cards__text">Redesigned from scratch and completely revised.</p>
+                                <h5 class="card-title">Apple Magic Mouse </h5>
+                                <p class="card-text">Redesigned from scratch and completely revised.</p>
                             </div>
-                            <div class="d-flex justify-content-stretch text-uppercase cards__btns">
-                                <a href="#" class="btn btn-light cards__wishlist"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
+                            <div class="d-flex justify-content-center text-uppercase">
+                                <a href="#" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
                                     wishlist</a>
-                                <a href="#" class="btn btn-primary text-uppercase cards__add"><svg
+                                <a href="#" class="btn btn-primary text-uppercase"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-basket3" viewBox="0 0 16 16">
                                         <path
@@ -638,7 +627,7 @@
             </div>
         </div>
         <nav aria-label="...">
-            <ul class="pagination justify-content-center d-none d-sm-flex paginat">
+            <ul class="pagination justify-content-center d-none d-sm-flex">
                 <li class="page-item disabled mx-3">
                     <span class="page-link border-0 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -670,7 +659,7 @@
             </ul>
         </nav>
         <nav aria-label="...">
-            <ul class="pagination justify-content-center pagination-sm d-flex d-sm-none paginat">
+            <ul class="pagination justify-content-center pagination-sm d-flex d-sm-none">
                 <li class="page-item disabled mx-1">
                     <span class="page-link border-0 rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
